@@ -1,0 +1,22 @@
+
+<form role="form" ng-submit="sendMessage()">
+	
+
+	<div class="form-group">
+		<label for="">From</label>
+		<input type="email" class="form-control" placeholder="From"
+		ng-model="message.sender">
+	</div>
+	<div class="form-group">
+		<input type="text" class="form-control" id="to" placeholder="To" ng-model="message.recipients">
+	</div>
+	<div class="form-group">
+		<input type="text" class="form-control" id="subject" placeholder="Subject" ng-model="message.subject">
+	</div>
+	<div class="form-group">
+		<input type="text" class="form-control" id="message" placeholder="Compose email" ng-model="message.message">
+	</div>
+	
+
+	<button type="submit" class="btn btn-primary">Send</button>
+</form>

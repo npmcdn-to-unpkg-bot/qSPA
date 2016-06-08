@@ -1,0 +1,20 @@
+<div ng-show='alertExist' ng-model="serverAlert" ng-controller="ServerInfoController">
+	
+
+	<div class="alert alert-info" ng-show='serverAlert.info'>
+		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+		<strong>{{serverAlert.info.title}}</strong> {{serverAlert.info.body}}
+	</div>
+
+	<div class="alert alert-warning" ng-show='serverAlert.warning'>
+		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+		<strong>{{serverAlert.warning.title}}</strong> {{serverAlert.warning.body}}
+	</div>
+
+	<div class="alert alert-danger" ng-show='serverAlert.danger'>
+		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+		<strong>{{serverAlert.danger.title}}</strong> {{serverAlert.danger.body}}
+	</div>
+
+
+</div>

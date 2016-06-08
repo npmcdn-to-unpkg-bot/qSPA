@@ -1,0 +1,57 @@
+
+<!-- Show users -->
+<div class="page-header">
+  <h2>AJAX <small>--testing</small></h2>
+</div>
+
+
+
+<hr>
+<div class="row" ng-controller="ajaxController">
+	<div class="col-md-12">
+
+		<table class="table table-hover">
+				<thead>
+					<tr>
+						<th>ID</th>
+						<th>name</th>
+						<th>email</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="user in users | filter: search">
+						<td>{{ user.id }}</td>
+						<td>{{ user.name }}</td>
+						<td>{{ user.email }}</td>
+					</tr>
+				</tbody>
+			</table>	
+						
+					
+						
+	</div>
+</div>
+
+
+<!-- Introduce new user -->
+
+<hr>
+<div class="row" >
+	<div class="col-md-12">
+
+		<form action="" method="" role="form">
+			<legend>Introduce user</legend>
+		
+			<div class="form-group">
+				<label for="">label</label>
+				<input type="text" class="form-control" id="" placeholder="Input field">
+			</div>
+		
+			
+		
+			<button type="submit" class="btn btn-primary">Submit</button>
+		</form>
+	
+						
+	</div>
+</div>

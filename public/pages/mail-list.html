@@ -1,0 +1,22 @@
+
+
+
+
+<div class="page-header">
+  <h2>Incomming Messages</h2>
+</div>
+
+<div class="row" ng-repeat="message in messages | filter: search" 
+	ng-hide="error.loading">
+	<p>Sender: <a href="#/"><em> {{ message.sender}} </em></a></p>
+	<p>Subject: {{message.subject}}</p>
+	<p>Date: {{message.date | date}}</p>
+	<p><a href="#/message/{{message.id}}">Read</a></p>
+	<hr>
+</div>
+
+<!-- Error loading data occurred -->
+<div ng-show='error.loading' ng-include="'fragments/error/loading.html'"></div>
+
+
+
